@@ -27,7 +27,6 @@ class Illustration:
 
     def plot_eigenvalues(self):
         for i in range(len(self.examination.indices)):
-            # plt.figure(figsize=[10, 6])
             plt.plot(self.examination.eigenvalues[i].real,
                      self.examination.eigenvalues[i].imag, '*')
         plt.axis('scaled')
@@ -36,7 +35,6 @@ class Illustration:
         plt.plot(self.examination.t, self.examination.traces, 'o-',
                  markersize=3, label=self.examination.type_name +
                  ' dt = {}'.format(self.time_evolution.stepwidth))
-        # plt.plot(self.examination.t, np.sum(self.examination.eigenvalues, axis=1))
         plt.title(r'Time evolution of the trace'
                   r' of the edge count matrices of the system with $\alpha = {0}$,'
                   r' $\beta = {1}$ and $\gamma = {2}$'
@@ -129,7 +127,7 @@ class Illustration:
             ax[1].grid()
             if zero_line:
                 ax[1].axvline(0, linestyle='--', color='black')
-            if type(outlier) == noneType:
+            if outlier == None:
                 ax[1].plot(ev.real, ev.imag, '*', markersize=3)
             else:
                 ax[1].plot(ev.real[1:], ev.imag[1:], '*', markersize=3)
