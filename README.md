@@ -19,7 +19,9 @@ A tutorial file that shows how the code works is included.
 Zainab Chokr 
 
 ## Sources
-The considerations follow the paper "Associative remodeling and repair in self-organizing neuronal networks (2018)" by Nebojša Gašparović, Júlia V. Gallinaro and Stefan Rotter.
+This code is part of the author's master thesis.
+The considerations follow the paper "Associative remodeling and repair in self-organizing neuronal networks (2022)" by Nebojša Gašparović, Júlia V. Gallinaro and Stefan Rotter
+and "Systematic and exact coarse graining of network dynamics (2018)" by Michael Kordovan and Stefan Rotter.
 
 ## Acknowledgments
-This work was supervised by Prof. Dr. Rotter from the Bernstein Center in Freiburg.
+This work was supervised by Prof. Dr. Stefan Rotter from the Bernstein Center in Freiburg.
